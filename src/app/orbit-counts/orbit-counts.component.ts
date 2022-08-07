@@ -27,15 +27,15 @@ export class OrbitCountsComponent implements OnInit {
 	return count;
  }
 
- countTotal(type: string): number {
-	let countTotal = 0;
+ countsTotal(type: string): number {
+	let countsTotal = 0;
 	if (this.satellites){
 	  for (let i = 0; i < this.satellites.length; i++) {
 		if (this.satellites[i]) {
-			countTotal++;
+			countsTotal++;
 		 }
 	  }
 	}
-	return countTotal;
+	return countsTotal;
 	}
 }
